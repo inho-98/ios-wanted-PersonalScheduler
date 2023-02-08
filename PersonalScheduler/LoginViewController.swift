@@ -20,8 +20,31 @@ final class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        configureStackView()
+        setupKakaoLoginButton()
     }
-
-
+    
+    private func configureStackView() {
+        view.backgroundColor = .systemBackground
+        view.addSubview(kakaoLoginButton)
+        
+        NSLayoutConstraint.activate([
+            kakaoLoginButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            kakaoLoginButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
+            kakaoLoginButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8)
+        ])
+    }
+    
+    private func setupKakaoLoginButton() {
+        kakaoLoginButton.addTarget(
+            self,
+            action: #selector(kakaoLoginButtonPressed),
+            for: .touchUpInside
+        )
+    }
+    
+    @objc func kakaoLoginButtonPressed() {
+        loginViewModel.handleKakaoLogin()
+    }
 }
