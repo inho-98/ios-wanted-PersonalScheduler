@@ -15,6 +15,7 @@
 		B24090D629924E76008DC79B /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B24090D529924E76008DC79B /* KakaoSDKAuth */; };
 		B24090D829924E76008DC79B /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = B24090D729924E76008DC79B /* KakaoSDKCommon */; };
 		B24090DA29924E76008DC79B /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = B24090D929924E76008DC79B /* KakaoSDKUser */; };
+		B24090DF2993763E008DC79B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24090DE2993763E008DC79B /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		63AAAB0D2967EA2700775EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AAAB0F2967EA2700775EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24090DB29924F35008DC79B /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		B24090DE2993763E008DC79B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				63AAAB0C2967EA2700775EC3 /* LaunchScreen.storyboard */,
 				63AAAB0F2967EA2700775EC3 /* Info.plist */,
 				B24090DB29924F35008DC79B /* Configuration.xcconfig */,
+				B24090DE2993763E008DC79B /* LoginViewModel.swift */,
 			);
 			path = PersonalScheduler;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24090DF2993763E008DC79B /* LoginViewModel.swift in Sources */,
 				63AAAB062967EA2600775EC3 /* LoginViewController.swift in Sources */,
 				63AAAB022967EA2600775EC3 /* AppDelegate.swift in Sources */,
 				63AAAB042967EA2600775EC3 /* SceneDelegate.swift in Sources */,

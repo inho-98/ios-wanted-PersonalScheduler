@@ -7,7 +7,16 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
+    private let kakaoLoginButton: UIButton = {
+        let button = UIButton()
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "kakaoLoginButton"), for: .normal)
+        
+        return button
+    }()
+    private let loginViewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +25,3 @@ class LoginViewController: UIViewController {
 
 
 }
-
