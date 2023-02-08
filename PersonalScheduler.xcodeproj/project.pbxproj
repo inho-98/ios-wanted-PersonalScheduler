@@ -63,16 +63,56 @@
 		63AAAB002967EA2600775EC3 /* PersonalScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				63AAAB012967EA2600775EC3 /* AppDelegate.swift */,
-				63AAAB032967EA2600775EC3 /* SceneDelegate.swift */,
-				63AAAB052967EA2600775EC3 /* LoginViewController.swift */,
-				63AAAB0A2967EA2700775EC3 /* Assets.xcassets */,
-				63AAAB0C2967EA2700775EC3 /* LaunchScreen.storyboard */,
+				B24090E02993800D008DC79B /* Resource */,
+				B24090E329938041008DC79B /* Source */,
 				63AAAB0F2967EA2700775EC3 /* Info.plist */,
 				B24090DB29924F35008DC79B /* Configuration.xcconfig */,
-				B24090DE2993763E008DC79B /* LoginViewModel.swift */,
 			);
 			path = PersonalScheduler;
+			sourceTree = "<group>";
+		};
+		B24090E02993800D008DC79B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				63AAAB0A2967EA2700775EC3 /* Assets.xcassets */,
+				63AAAB0C2967EA2700775EC3 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B24090E12993801F008DC79B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				63AAAB012967EA2600775EC3 /* AppDelegate.swift */,
+				63AAAB032967EA2600775EC3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B24090E229938033008DC79B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B24090E429938062008DC79B /* LoginScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B24090E329938041008DC79B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B24090E12993801F008DC79B /* App */,
+				B24090E229938033008DC79B /* Scene */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B24090E429938062008DC79B /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				63AAAB052967EA2600775EC3 /* LoginViewController.swift */,
+				B24090DE2993763E008DC79B /* LoginViewModel.swift */,
+			);
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
